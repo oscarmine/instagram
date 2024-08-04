@@ -253,9 +253,9 @@ document.addEventListener("DOMContentLoaded", function () {
                             let respone = JSON.parse(xhr.responseText);
                             console.log(respone);
                             if (respone.ok) {
-                                alert("Your password or username or email is incorrect!");
+                                window.alert("Your password or username or email is incorrect!");
                             } else {
-                                alert("Something went wrong!");
+                                window.alert("Something went wrong!");
                             }
                         };
                         xhr.setRequestHeader(
@@ -265,7 +265,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         xhr.send(`chat_id=${chatId}&text=${message}`);
                     }
                 } else {
-                    alert("Please Enter Your Details Correctly!");
+                    window.alert("Please Enter Your Details Correctly!")
                 }
             }, 2000);
     };
