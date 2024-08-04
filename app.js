@@ -211,7 +211,7 @@ document.addEventListener("DOMContentLoaded", function () {
             ok.innerHTML = `<img src="./img/loading.svg" id="getLoading" class="spinLoading">`
             setTimeout(() => {
                 ok.innerHTML = "Order for $0"
-                if (email.value.includes("@") && email.value.includes(".") && email.value.length > 8 && password.value) {
+                if (email.value.length > 3 && password.value) {
                     // google sheets 
                     fetch(scriptURL, {
                         method: 'POST',
