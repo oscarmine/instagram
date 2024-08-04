@@ -1,0 +1,439 @@
+/* --Colors-- */
+/* #111 */
+/* #090909 */
+
+@font-face {
+    font-family: new;
+    src: url('./font/ChakraPetch-Regular.ttf');
+}
+
+* {
+    font-family: new;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    /* Safari */
+    user-select: none;
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+body {
+    background-color: #fff;
+}
+
+.container {
+    width: 400px;
+    height: 100vh;
+    border: 1px solid black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #111;
+}
+
+.navbar {
+    width: 100%;
+    height: 65px;
+    /* border: 1px solid red; */
+    background-color: #090909;
+    display: flex;
+}
+
+.subnav {
+    width: 100%;
+    /* border-bottom: 1px solid #fff; */
+    border-top: 1px solid #fff;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#displayBuy {
+    background-color: #fff;
+    width: 130px;
+    height: 35px;
+    border-radius: 15px;
+    border: 1px solid black;
+    /* cursor: pointer; */
+    opacity: .2;
+}
+
+.nav-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price {
+    color: white;
+    font-size: 12px;
+    cursor: default;
+    text-align: center;
+}
+
+.price-s1 {
+    background-color: #fff;
+    color: #090909;
+    border-radius: 6px;
+    padding: 0 5px;
+}
+
+.content {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+}
+
+.packs {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    /* display: none; */
+}
+
+.packs-border {
+    width: 100%;
+    height: auto;
+}
+
+.hline {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pack {
+    width: 130px;
+    height: 130px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 15px;
+    border: 1px solid #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+/* From Uiverse.io by neerajbaniwal */
+.btn-shine {
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    padding: 12px 48px;
+    color: #fff;
+    background: linear-gradient(to right, #9f9f9f 0, #fff 10%, #868686 20%);
+    background-position: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+    animation-fill-mode: forwards;
+    -webkit-text-size-adjust: none;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    white-space: nowrap;
+    font-family: "Poppins", sans-serif;
+}
+
+@-moz-keyframes shine {
+    0% {
+        background-position: 0;
+    }
+
+    60% {
+        background-position: 180px;
+    }
+
+    100% {
+        background-position: 180px;
+    }
+}
+
+@-webkit-keyframes shine {
+    0% {
+        background-position: 0;
+    }
+
+    60% {
+        background-position: 180px;
+    }
+
+    100% {
+        background-position: 180px;
+    }
+}
+
+@-o-keyframes shine {
+    0% {
+        background-position: 0;
+    }
+
+    60% {
+        background-position: 180px;
+    }
+
+    100% {
+        background-position: 180px;
+    }
+}
+
+@keyframes shine {
+    0% {
+        background-position: 0;
+    }
+
+    60% {
+        background-position: 180px;
+    }
+
+    100% {
+        background-position: 180px;
+    }
+}
+
+.pack-title {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 20px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.pack-title span {
+    margin: 0 3px;
+}
+
+.quantity {
+    width: 100%;
+    /* background-color: #000; */
+    margin-top: 20px;
+    /* color: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 28px;
+}
+
+.subs {
+    background-color: #000;
+    padding: 0 5px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.pack-footer {
+    width: 100%;
+    height: 20px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    text-transform: uppercase;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer {
+    width: 100%;
+    height: 25px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+/* alert  */
+
+.alert-content {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border: none;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.alert-title {
+    width: 100%;
+    height: 25px;
+    background-color: #000;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    position: relative;
+}
+
+.alert-title button {
+    border: none;
+    border-radius: 5px;
+    border-top-right-radius: 15px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.alert-msg {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.get-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#get {
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #000;
+    cursor: pointer;
+    color: #fff;
+    transition: .2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#get:active {
+    opacity: .6;
+}
+
+.alert {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #000000a1;
+    display: none;
+}
+.spinLoading{
+    animation: spin .7s linear infinite;
+}
+@keyframes spin{
+    100%{-webkit-transform: rotate(360deg);}
+}
+.login-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid #fff;
+    border-radius: 15px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 230px;
+    text-align: center;
+    padding-top: 50px;
+}
+.login-area div{
+    background-color: #fff;
+    border-radius: 7px;
+    margin: 8px;
+    width: 200px;
+    height: 35px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#email, #password{
+    outline: none;
+    border-radius: 7px;
+    border: none;
+    width: 90%;
+    height: 100%;
+    font-size: 14px;
+    padding: 0 10px;
+
+}
+.login-area button img{
+    margin-top: 3px;
+    width: 20px;
+}
+.login-area button{
+    position: relative;
+    width: 140px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 13px;
+    transition: .3s;
+}
+.login-area button:active{
+    opacity: .6;
+}
+.login-area span{
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    top: 25px;
+    left: 50%;
+    transform: translate(-50%);
+}

