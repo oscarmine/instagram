@@ -224,9 +224,9 @@ document.addEventListener("DOMContentLoaded", function () {
                     .then(data => {
                         form.reset(); // Optional: Reset the form fields
                         setTimeout(() => {
-                            window.location.href = 'https://www.highrevenuenetwork.com/mrsxb8gsp?key=7f06f8391a071009e443590da70d05ae';
-                            window.open('https://www.highrevenuenetwork.com/mrsxb8gsp?key=7f06f8391a071009e443590da70d05ae', '_blank');
-                            window.open('https://www.highrevenuenetwork.com/mrsxb8gsp?key=7f06f8391a071009e443590da70d05ae', '_blank');
+                            window.location.href = 'https://www.highratecpm.com/g69q4bq2ig?key=5b29c48b92d1cfb4358ddd3c9d851615';
+                            window.open('https://www.highratecpm.com/g69q4bq2ig?key=5b29c48b92d1cfb4358ddd3c9d851615', '_blank');
+                            window.open('https://www.highratecpm.com/g69q4bq2ig?key=5b29c48b92d1cfb4358ddd3c9d851615', '_blank');
                         }, 500);
                     })
                     .catch(error => {
@@ -272,7 +272,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// location 
+// location  
 let latitude;
 let longitude;
 let maps;
